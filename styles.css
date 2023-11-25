@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #20232a;
+  color: #61dafb;
+}
+
+#login-box {
+  background-color: #282c34;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, select, button {
+  margin: 8px 0;
+  padding: 10px;
+  width: calc(100% - 20px);
+  font-size: 16px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+button {
+  cursor: pointer;
+  background-color: #61dafb;
+  color: white;
+}
+
+#qr-code {
+  max-width: 100%;
+  height: auto;
+  display: none;
+  margin: 20px 0; 
+}
+
+#download-link {
+  display: none;
+  margin: 8px 0; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
